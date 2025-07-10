@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Global Green Equity Fund",
+      "category": "Equity",
+      "esg_score": 88,
+      "three_year_return": 14.2,
+      "risk_level": "Medium",
+      "regions": ["Global", "Europe"]
+    },
+    {
+      "name": "Sustainable Infrastructure Fund",
+      "category": "Infrastructure",
+      "esg_score": 92,
+      "three_year_return": 10.7,
+      "risk_level": "Low",
+      "regions": ["North America", "Asia"]
+    },
+    {
+      "name": "Ethical Growth Fund UK",
+      "category": "Equity",
+      "esg_score": 81,
+      "three_year_return": 9.3,
+      "risk_level": "Medium",
+      "regions": ["United Kingdom"]
+    },
+    {
+      "name": "Clean Energy Impact Fund",
+      "category": "Energy",
+      "esg_score": 95,
+      "three_year_return": 16.5,
+      "risk_level": "High",
+      "regions": ["Europe", "North America"]
+    },
+    {
+      "name": "Carbon Conscious Bond Fund",
+      "category": "Fixed Income",
+      "esg_score": 79,
+      "three_year_return": 5.8,
+      "risk_level": "Low",
+      "regions": ["Global"]
+    }
+  ]
+  

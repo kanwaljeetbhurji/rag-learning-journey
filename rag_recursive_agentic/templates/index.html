@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ask a Question - Agentic RAG</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-gray-100 min-h-screen flex items-center justify-center p-6">
+    <div class="bg-white shadow-xl rounded-2xl p-8 max-w-2xl w-full">
+        <div class="flex items-center space-x-3 mb-6">
+            <span class="text-3xl">🤖</span>
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800">Ask a Question</h1>
+        </div>
+        <p class="text-gray-600 mb-6">This assistant can answer questions using structured and image-based knowledge from government services, ESG investments.</p>
+        
+        <form action="/ask" method="POST" class="space-y-4">
+            <input 
+                type="text" 
+                name="query" 
+                placeholder="e.g., What are the side effects of aspirin?" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none text-gray-800"
+                required 
+            >
+            <button 
+                type="submit" 
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200"
+            >
+                🔍 Ask Question
+            </button>
+        </form>
+        
+        <div class="mt-6 text-sm text-gray-500 text-center">
+            Supports queries about 🏦 ESG funds, and 🏛️ UK benefits.
+        </div>
+    </div>
+</body>
+</html>

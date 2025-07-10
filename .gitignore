@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+env/
+venv/
+ragvirtualenv/
+
+# macOS system files
+.DS_Store
+
+# IDE settings
+.vscode/
+
+# Logs
+*.log
+
+# Charts and temporary outputs
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Environment variables or API tokens (if added)
+.env
+
+# Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/

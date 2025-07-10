@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Universal Credit",
+    "department": "Department for Work and Pensions",
+    "description": "Monthly payment to help with living costs if you're on low income, out of work, or cannot work.",
+    "eligibility": ["UK resident", "Low income", "Over 18 (or 16–17 in special cases)"],
+    "apply_link": "https://www.gov.uk/universal-credit"
+  },
+  {
+    "name": "Child Benefit",
+    "department": "HM Revenue and Customs",
+    "description": "Money paid to parents or guardians responsible for raising a child under 16 (or under 20 in approved education).",
+    "eligibility": ["Living in the UK", "Responsible for a child under 16"],
+    "apply_link": "https://www.gov.uk/child-benefit"
+  },
+  {
+    "name": "Pension Credit",
+    "department": "Department for Work and Pensions",
+    "description": "Extra money to help with living costs if you're over State Pension age and on a low income.",
+    "eligibility": ["Over State Pension age", "Low income"],
+    "apply_link": "https://www.gov.uk/pension-credit"
+  },
+  {
+    "name": "Energy Bills Support Scheme",
+    "department": "Department for Energy Security and Net Zero",
+    "description": "Help for households with their energy bills during winter.",
+    "eligibility": ["UK resident", "Has domestic energy contract"],
+    "apply_link": "https://www.gov.uk/guidance/getting-the-energy-bills-support"
+  },
+  {
+    "name": "Disability Living Allowance (DLA)",
+    "department": "Department for Work and Pensions",
+    "description": "Support for disabled children under 16 who need help looking after themselves or getting around.",
+    "eligibility": ["Under 16", "Has a disability"],
+    "apply_link": "https://www.gov.uk/disability-living-allowance-children"
+  }
+]

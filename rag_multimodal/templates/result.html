@@ -1,0 +1,32 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RAG Answer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-4">🔍 Query: {{ query }}</h1>
+    <div class="bg-white p-4 rounded shadow mb-6">
+      <h2 class="text-xl font-semibold mb-2">💬 Answer</h2>
+      <p>{{ answer }}</p>
+    </div>
+
+    <h2 class="text-2xl font-bold mb-4">📚 Retrieved Sources</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      {% for med in retrieved %}
+      <div class="bg-white p-4 rounded shadow">
+        <img src="{{ url_for('static', filename=med.image_path.replace('static/', '')) }}" alt="{{ med.name }}" class="w-full h-48 object-cover rounded mb-3">
+        <h3 class="text-xl font-semibold">{{ med.name }}</h3>
+        <p class="text-sm text-gray-600 mb-1"><strong>Category:</strong> {{ med.category }}</p>
+        <p class="text-sm text-gray-600 mb-1"><strong>Used for:</strong> {{ med.used_for | join(', ') }}</p>
+        <p class="text-sm text-gray-600 mb-1"><strong>Side effects:</strong> {{ med.side_effects | join(', ') }}</p>
+        <p class="text-sm text-gray-600"><strong>Child safe:</strong> {{ 'Yes' if med.child_safe else 'No' }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

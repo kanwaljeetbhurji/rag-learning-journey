@@ -1,0 +1,53 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>RAG Answer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 p-6">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <h1 class="text-2xl font-bold mb-4 text-blue-600">Agentic RAG - Result</h1>
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">💬 Your Question:</h2>
+            <p class="text-gray-800">{{ query }}</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">🧠 Answer:</h2>
+            <p class="text-gray-900 whitespace-pre-line">{{ answer }}</p>
+        </div>
+
+        {% if agent_log %}
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">🤖 Agent Reasoning:</h2>
+            <pre class="bg-yellow-50 p-3 rounded border border-yellow-400 text-sm text-yellow-900">{{ agent_log }}</pre>
+        </div>
+        {% endif %}
+
+        {% if retrieved %}
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">📚 Sources Used:</h2>
+            <ul class="list-disc ml-6 text-gray-800">
+                {% for item in retrieved %}
+                    <li><strong>{{ item.name }}</strong> - {{ item.category }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if chart %}
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">📊 Chart:</h2>
+            <img src="{{ url_for('static', filename=chart.split('static/')[1]) }}" alt="Generated Chart" class="rounded shadow-md mt-2 max-w-full">
+        </div>
+        {% endif %}
+
+        <a href="/" class="inline-block mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
+            🔄 Ask Another Question
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Aspirin",
+      "category": "NSAID",
+      "used_for": ["pain", "fever", "inflammation"],
+      "side_effects": ["stomach bleeding", "Reye's syndrome (in children)"],
+      "child_safe": false
+    },
+    {
+      "name": "Paracetamol",
+      "category": "Analgesic",
+      "used_for": ["mild pain", "fever"],
+      "side_effects": ["liver damage (in overdose)"],
+      "child_safe": true
+    },
+    {
+      "name": "Ibuprofen",
+      "category": "NSAID",
+      "used_for": ["pain", "inflammation"],
+      "side_effects": ["stomach irritation", "kidney damage"],
+      "child_safe": true
+    },
+    {
+      "name": "Naproxen",
+      "category": "NSAID",
+      "used_for": ["pain", "arthritis"],
+      "side_effects": ["dizziness", "nausea", "ulcers"],
+      "child_safe": false
+    },
+    {
+      "name": "Cetirizine",
+      "category": "Antihistamine",
+      "used_for": ["allergy", "runny nose", "sneezing"],
+      "side_effects": ["drowsiness", "dry mouth"],
+      "child_safe": true
+    }
+  ]
+  
